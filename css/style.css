@@ -1,0 +1,399 @@
+/*RESET*/
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/*ESTILOS HOME*/
+
+.cajaHome{
+    background: rgb(61,237,60);
+    background: linear-gradient(0deg, rgba(61,237,60,1) 0%, rgba(72,217,236,1) 100%);
+    display: grid;
+    height: 120vh;
+    width: 100%;
+    grid-template-rows: 1fr 0,8fr 1,4fr 0,8fr;
+    grid-template-areas: "titulo"
+                        "menu"
+                        "img1"
+                        "footer";
+}
+
+header{
+    text-decoration: none;
+    display: grid;
+}
+
+h1{
+    margin: 5px;
+    width: 15rem;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 65px;
+    font-weight: 100px;
+    font-family: 'Fredoka One', cursive;
+    grid-area: titulo;
+}
+
+
+.menu{
+    text-align: center;
+    display: grid;
+}
+
+.barra{
+    flex-direction: row;
+    display: grid;
+    grid-area: menu;
+}
+
+
+.menu ul li{
+    
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+    font-family: Lucida Sans;
+    font-size: 14px;
+}
+
+.menu ul li:hover{
+    background-color: rgb(205, 205, 211);
+    font-weight: 500;
+}
+
+
+a{
+    color: rgb(79, 67, 146);
+    text-decoration: none;
+}
+
+    
+.imagen{
+    display: grid;
+    width: 60%;
+    display: block;
+}
+
+.img1{
+    height: 45vh;
+    grid-area: img1;
+}
+
+
+footer{
+    margin: 5px;
+}
+   
+p{
+        color: rgb(79, 67, 146);
+        text-align: center;
+        padding: 5px;
+        font-size: 14px;
+}
+
+@media screen and (min-width:600px){
+    .cajaHome{
+        display: grid;
+        grid-template-columns: 0,4fr 1,6fr;
+        grid-template-rows: 0,2fr 2,4fr 0,2fr;
+        grid-template-areas:"titulo titulo"
+                            "menu img1"
+                            "footer footer";
+    }
+                           
+
+
+}
+
+.barra{
+    display: grid;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   justify-content:space-evenly;
+   align-items: flex-start;
+   padding: 30px;
+   
+}
+
+.menu ul li{
+    padding: 10px;
+    margin: 14px;
+    font-size: 1rem;
+}
+.imagen{
+    display: grid;
+    margin-top: 80px;
+}
+
+.img1{
+    height: 65vh;
+}
+
+footer{
+    text-align: center;
+}
+
+
+
+
+/*EStilos de html QUIENES SOMOS*/
+
+.cajaQs{
+    background: rgb(61,237,60);
+    background: linear-gradient(0deg, rgba(61,237,60,1) 0%, rgba(72,217,236,1) 100%);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0,4fr 0,4fr 2,8fr 1,4fr 0,4fr 0,4fr;
+    grid-template-areas: "Titulo2"
+                         "Subtitulo"
+                         "menu"
+                         "Descripcion"
+                         "Imagen2"
+                         "Comentario"
+                         "footer2";
+}
+
+.qsTitulo{
+    text-align: center;
+    grid-area: Titulo2;
+}
+
+
+.qs{
+    margin: 15px;
+    font-family: Trebuchet MS;
+    font-weight: 600;
+    font-size: 16px;
+    grid-area: Descripcion;
+    }
+
+
+.qsSubt{
+    color: rgb(61, 29, 240);
+    text-align: center;
+    font-family: Trebuchet MS;
+    font-size: 35px;
+    grid-area: Subtitulo;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    grid-area: menu;
+}
+
+
+
+h3{color: rgb(61, 29, 240);
+    margin: 20px;
+    font-weight: 12px;
+    text-align: center;
+    grid-area: Comentario;
+}
+.cajaImg{
+    width: 100%;
+    grid-area: Imagen2;
+}
+.img2{
+width: 50%;
+height: auto;
+margin: auto;
+display: block;
+}
+
+footer{
+    grid-area: footer2;
+}
+
+@media screen and (mind-width:600px){
+.cajaQs{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0,5fr 0,5fr 1,8fr 1,8fr 0,4fr;
+    grid-template-areas: "Titulo Titulo Titulo"
+                         "Subtitulo Subtitulo Subtitulo"
+                         "menu Descripcion Imagen2"
+                         "menu Descripcion Comentario"
+                         "footer footer footer";
+}
+    
+
+}
+    
+
+
+/*Estilos de html Servicios*/
+
+.cajaServ{
+    background: rgb(61,237,60);
+    background: linear-gradient(0deg, rgba(61,237,60,1) 0%, rgba(72,217,236,1) 100%);
+
+}
+
+.h1Serv{
+    font-family: Cochin;
+    font-size: 35px;
+    margin: 10px;
+    padding: 10px;
+    color: rgb(61, 29, 240);
+}
+
+.h2Serv{
+    color: rgb(79, 67, 146);
+    text-align: center;
+    text-decoration: underline;
+}
+
+.ulServ{
+    color: rgb(61, 29, 240);
+    margin: 20px;
+    padding: 25px;
+    font-family: Trebuchet MS;
+    font-size: 18px;
+}
+    
+/*Estilos de Nuestros Trabajos*/
+
+.cajaNt{
+    background: rgb(61,237,60);
+    background: linear-gradient(0deg, rgba(61,237,60,1) 0%, rgba(72,217,236,1) 100%);
+
+}
+.h1Nt{
+    font-size: 30px;
+    margin-top: 12px;
+}
+
+.imagenes{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.img4{
+    flex-wrap: wrap;
+    height: 250px;
+    width: 300px;
+    margin: 10px;
+}
+.img5{
+    flex-wrap: wrap;
+    height: 250px;
+    width: 300px;
+    margin: 10px;
+}
+.img6{
+    flex-wrap: wrap;
+    height: 250px;
+    width: 300px;
+    margin: 10px;
+}
+.img7{
+    flex-wrap: wrap;
+    height: 250px;
+    width: 300px;
+    margin: 10px;
+}
+
+.videos{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+    
+.vd1{
+    margin: 10px;
+    padding: 10px;  
+}
+
+.vd2{
+    margin: 10px;
+    padding: 10px;
+
+}
+
+/*ESTILO html Zonas*/
+
+.cajaEsp{
+    background: rgb(61,237,60);
+    background: linear-gradient(0deg, rgba(61,237,60,1) 0%, rgba(72,217,236,1) 100%);
+}
+
+.h1Zonas{
+    font-family: Segoe UI;
+    font-size: 30px;
+}
+
+.h2Zonas{
+    color: forestgreen;
+    text-align: center;
+    margin: 12px;
+
+}
+
+.ulZonas{
+    color: rgb(79, 67, 146);
+    margin: 12px;
+    padding: 12px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Gills Sans MT;
+    
+}
+
+h4{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 18px;
+    margin: 15px;
+}
+
+/*ESTILOS de html Contacto*/
+
+.cajaCont{
+    background: rgb(61,237,60);
+    background: linear-gradient(0deg, rgba(61,237,60,1) 0%, rgba(72,217,236,1) 100%);
+}
+
+.h1Contacto{
+    font-family: Calibri;
+    font-size: 42px;
+    margin: 20px;
+}
+
+form{
+    color: rgb(61, 29, 240);
+    font-size: 22px;
+}
+
+fieldset{
+    margin: 20px;
+    padding: 22px;
+}
+
+.nombre{
+    margin: 15px;
+}
+
+.tel{
+    margin: 15px;
+}
+
+.ubi{
+    margin: 15px;
+}
+
+.envRes{
+    margin: 15px;
+}
+
+
+
+
+
+
+
+
